@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LePtitstagiaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#commandes-de-bases">Commandes de bases</a></li>
+                <li><a href="#ssh">SSH</a></li>
+                <li><a href="#serveur-web">Serveur Web</a></li>
+                <li><a href="#git-github">Git/GitHub</a></li>
+                <li><a href="#Kali-Linux">Kali-Linux</a></li>
+                <li><a href="#Certifications">Mes Certifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="accueil">
+        <h1><strong>BIENVENUE SUR MON SITE</strong></h1>
+        <p>Ceci est un résumé de ma formation fait dans l'entreprise d'Alterway Smile.</p>
+    </section>
+
+    <section id="commandes-de-bases">
+        <h2>Commandes de bases</h2>
+        <p>Quelques commandes de bases en ligne de commande :</p>
+        <ul>
+            <li><strong>ls</strong> : Liste les fichiers et dossiers</li>
+            <img src="images/lss.png" alt="Commande ls">
+            <li><strong>cd</strong> : Change le répertoire courant</li>
+            <img src="images/cd.png" alt="Commande cd">
+            <li><strong>mkdir</strong> : Crée un nouveau dossier</li>
+            <img src="images/mkdir.png" alt="Commande mkdir">
+            <li><strong>rm</strong> : Supprime un fichier ou un dossier</li>
+            <img src="images/rm.png" alt="Commande rm">
+            <li><strong>cp</strong> : Copie des fichiers ou des dossiers</li>
+            <img src="images/cp.png" alt="Commande cp">
+            <li><strong>mv</strong> : Déplace ou renomme des fichiers ou des dossiers</li>
+            <img src="images/mv.png" alt="Commande mv">
+            <li><strong>pwd</strong> : Nous renvoie le répertoire où l'on est</li>
+            <img src="images/pwd.png" alt="Commande pwd">
+            <li><strong>vi/vim</strong> : Editer un fichier</li>
+            <img src="images/vi1.png" alt="Commande vi">
+            <img src="images/vi2.png" alt="Commande vi">
+            <li><strong>cat</strong> : Visualiser un fichier</li>
+            <img src="images/cat.png" alt="Commande cat">
+            <li><strong>touch</strong> : Créer un fichier vide</li>
+            <img src="images/touch.png" alt="Commande touch">
+            <li><strong>ping</strong> : Test la connectivité du réseau</li>
+            <img src="images/ping.png" alt="Commande ping">
+            <li><strong>ip a</strong> : affiche l'addresse ip de la machine</li>
+            <img src="images/ipa.png" alt="Commande ipa">
+            <li><strong>apt</strong> : Gestionnaire de paquets</li>
+            <img src="images/apt.png" alt="Commande apt">
+            <li><strong>history</strong> : affiche l'historique de toute les commandes</li>
+            <img src="images/history.png" alt="Commande history">
+            <li><strong>grep</strong> : Affiche les lignes correspondant au modèles</li>
+            <img src="images/mkdir.grep" alt="Commande grep">
+            <li><strong>sudo/su-</strong> : Se connecter en admin</li>
+            <img src="images/su-.png" alt="Commande su-">
+            <li><strong>passwd</strong> : changer les mots de passes</li>
+            <img src="images/passwd.png" alt="Commande passwd">
+            <li><strong>kill</strong> : Terminer les programmes</li>
+            <img src="images/kill.png" alt="Commande kill">
+        </ul>
+    </section>
+
+    <section id="ssh">
+        <h2>SSH</h2>
+        <p>SSH (Secure Shell) est un protocole réseau qui permet de se connecter de manière sécurisée à un ordinateur distant.</p>
+        <p>Quelques commandes SSH :</p>
+        <ul>
+            <li><strong>ssh user@hostname</strong> : Se connecter à une machine distante</li>
+            <li><strong>ssh-keygen</strong> : Générer une paire de clés SSH</li>
+            <li><strong>ssh-copy-id user@hostname</strong> : Copier une clé publique vers une machine distante</li>
+        </ul>
+    </section>
+
+    <section id="serveur-web">
+        <h2>Serveur Web</h2>
+        <p>Les serveurs web permettent de servir des pages web aux utilisateurs. Les plus courants sont Apache et Nginx.</p>
+        <p>Quelques commandes et concepts de base :</p>
+        <ul>
+            <li><strong>apachectl start</strong> : Démarrer le serveur Apache</li>
+            <li><strong>systemctl start nginx</strong> : Démarrer le serveur Nginx</li>
+            <li><strong>DocumentRoot</strong> : Le répertoire où sont stockés les fichiers du site web</li>
+        </ul>
+        <h3><strong>INSTALLATION D'UN SERVEUR WEB</strong></h3>
+        <h4><strong>APACHE 2</strong></h4>
+        <li><strong>apt cache ...</strong> : servant à chercher tout les packs apache2 php</li>
+        <img src="images/apt cahe search apache2 php.png" alt="apt search">
+        <li><strong>apt install ...</strong> : Après avoir fait une recherche sur internet voici la ligne de commande permettant d'installer apache2 /php/mysql</li>
+        <img src="images/commande pour insataller apach2 mysql.png" alt="apt install">
+        <h4><strong>NGINX</strong></h4>
+        <li><strong>apt install nginx</strong> : Voici la ligne de commande simple pour installer nginx</li>
+        <img src="images/install nginx.png" alt="nginx install">
+
+        <h3>Configuration d'un serveur web</h3>
+        <p>A l'aide de la commande cat /etc/nginx on va pourvoir se balader dans les fichiers de configuraitons afin de configurer notre serveur web</p>
+        <li><strong>cat /etc/nginx/sites-enabled/default</strong> : Voici la ligne de commande simple pour configurer nginx et ça se passe dans le dossier etc</li>
+        <img src="images/config nginx cat etcnginxsites-enabeddefault.png" alt="nginx install">
+        <p>Le fichier n'est pas présent dans son intégralité mais vous voyez le genre</p>
+    </section>
+
+    <section id="git-github">
+        <h2>Git/GitHub</h2>
+        <p>Git est un système de contrôle de version distribué. GitHub est une plateforme d'hébergement de dépôts Git.</p>
+        <p>Quelques commandes Git de bases :</p>
+        <ul>
+            <li><strong>git init</strong> : Initialiser un nouveau dépôt Git</li>
+            <li><strong>git clone url</strong> : Cloner un dépôt distant</li>
+            <li><strong>git add</strong> : Ajouter des fichiers à l'index</li>
+            <li><strong>git commit -m "message"</strong> : Enregistrer les changements avec un message</li>
+            <li><strong>git push</strong> : Envoyer les modifications vers le dépôt distant</li>
+        </ul>
+    </section>
+    <section id="Kali-Linux">
+        <h2>Kali-Linux</h2>
+    </section>
+    <section id="Certifications">
+        <h2>Mes Certifications</h2>
+    <p><strong>Voici notamment ma première certification obtenue du stage : </strong></p>
+        <img src="images/vraicertif.png" alt="Certif Linux">
+    </section>
+    <p>Elle m'a été très utile car elle permet d'avoir de bonnes bases pour la suite du stage et elle reste indispensable </p>
+    <p><strong>J'en ai également une deuxième en cours sur l'outil Git/GitHub :</strong></p>
+</body>
+</html>

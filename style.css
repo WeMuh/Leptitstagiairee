@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/bg-main-dark-800w.jpg");
+    color: #f0f0f5;
+}
+
+nav {
+    background: linear-gradient(to bottom right, rgb(5, 0, 27), rgb(34, 0, 112));
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #404080;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #e0e0ff;
+}
+
+h2 {
+    border-bottom: 2px solid #404080;
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    list-style: disc inside;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #809fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+header{
+    color: transparent;
+}
+
+h1{
+    text-align: center;
+}
