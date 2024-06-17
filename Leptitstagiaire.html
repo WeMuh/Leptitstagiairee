@@ -10,23 +10,34 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#commandes-de-bases">Commandes de bases</a></li>
-                <li><a href="#ssh">SSH</a></li>
-                <li><a href="#serveur-web">Serveur Web</a></li>
-                <li><a href="#git-github">Git/GitHub</a></li>
-                <li><a href="#Kali-Linux">Kali-Linux</a></li>
-                <li><a href="#Certifications">Mes Certifications</a></li>
+                <li><a href="#accueil"><strong>ACCEUIL</strong></a></li>
+                <li><a href="#commandes-de-bases"><strong>COMMANDES DE BASES</strong></a></li>
+                <li><a href="#ssh"><strong>SSH</strong></a></li>
+                <li><a href="#serveur-web"><strong>SERVEUR WEB</strong></a></li>
+                <li><a href="#git-github"><strong>GIT-GITHUB</strong></a></li>
+                <li><a href="#Kali-Linux"><strong>KALI-LINUX</strong></a></li>
+                <li><a href="#Certifications"><strong>MES CERTIFICATIONS</strong></a></li>
             </ul>
+            <form>
+                <div>
+                  <input type="search" id="maRecherche" name="q" />
+                  <button>Rechercher</button>
+                </div>
+              </form>
         </nav>
+          
     </header>
 
 
     <section id="accueil">
         <h1><strong>BIENVENUE SUR MON SITE</strong></h1>
-        <p>Ceci est un résumé de ma formation fait dans l'entreprise d'Alterway Smile.</p>
+        <p>Ceci est un résumé de ma formation fait dans l'entreprise d'Alterway Smile.
+            Ce Site est le premier que je configure dans un serveur web nginx.
+        </p>
     </section>
 
+    <h2>L'ARBORESCENCE TYPE DE LINUX :</h2>
+    <img src="images/arborescence-1024x393.jpg" alt="arborescence">
     <section id="commandes-de-bases">
         <h2>Commandes de bases</h2>
         <p>Quelques commandes de bases en ligne de commande :</p>
@@ -80,6 +91,9 @@
             <li><strong>ssh-keygen</strong> : Générer une paire de clés SSH</li>
             <li><strong>ssh-copy-id user@hostname</strong> : Copier une clé publique vers une machine distante</li>
         </ul>
+        <p>Exemple de la commande : </p>
+        <img src="images/connexionSSH.png" alt="connexionenssh">
+        <p>On voit bien qu'ici je suis connecté sur ma machine virtuel en SSH</p>
     </section>
 
     <section id="serveur-web">
@@ -106,7 +120,17 @@
         <li><strong>cat /etc/nginx/sites-enabled/default</strong> : Voici la ligne de commande simple pour configurer nginx et ça se passe dans le dossier etc</li>
         <img src="images/config nginx cat etcnginxsites-enabeddefault.png" alt="nginx install">
         <p>Le fichier n'est pas présent dans son intégralité mais vous voyez le genre</p>
+
+        <h3>Exemple de la config du site LePtitstagiaire :</h3>
+        <img src="images/Configptitstagiaire.png" alt="confptit">
+        <p>Dans cete config on voit que j'ai attribué un nom sur le serveur et lui ai indiqué le chemin pour ouvrir ma page web</p>
+        <p>Pour accéder au site on a juste a tapper le nom qu'on a attribué au préalable dans la commande qui nous permet de lier l'adresse ip de la MV à un nom.</p>
+        <p>Exemple ci-dessous :</p>
+        <img src="images/ETCHOSTS1.png" alt="etchosts1">
+        <img src="images/ETCHOSTS2.png" alt="ETCHOSTS2">
+        <p>On voit bien sur la ligne 10.15.90.25 suivi du nom de notre serveur web</p>
     </section>
+
 
     <section id="git-github">
         <h2>Git/GitHub</h2>
